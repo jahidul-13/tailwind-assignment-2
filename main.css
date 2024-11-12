@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+body{
+    background-color: #FAFAFA;
+    font-family: "Plus Jakarta Sans", serif; 
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+    .container-1{
+        @apply pl-16 pr-16;
+    }
+
+    .nav-li{
+        @apply  cursor-pointer hover:text-[#F44335] transition-all duration-300 my-6 md:my-0;
+    }
+
+    .empower-card{
+        @apply bg-[#2D3142] rounded-md cursor-pointer shadow-2xl transition-all hover:scale-105 hover:translate-y-1 text-center md:text-start py-10;
+    }
+
+    .empower-img{
+        @apply bg-white w-[50px] h-[50px] rounded-full m-auto md:mx-5;
+    }
+
+    .about-button{
+        @apply flex items-center gap-2 outline md:text-base text-[#F44335] font-semibold text-xs md:py-3 py-2 md:px-6 px-3 rounded-full hover:bg-[#e34034] transition hover:scale-105 hover:translate-y-1 hover:text-white;
+    }
+
+    .team-img{
+        @apply bg-[#FFFFFF] rounded flex flex-col items-center mx-10 md:mx-0 my-5 p-10 transition-all hover:scale-105 hover:translate-y-1;
+    }
+}
+
+.hero-img{
+    background-image: url(images/edwin-andrade-4V1dC_eoCwg-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
